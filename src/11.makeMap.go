@@ -2,14 +2,9 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/gorilla/mux"
 )
 
-func main() {
-	r := mux.NewRouter()
-	r.HandleFunc("/")
-	r.HandleFunc("/products")
+func makeMapFunction() {
 	m := make(map[string]int)
 	m["Raul"] = 14
 	m["Señor de Sipan"] = 15
@@ -24,6 +19,6 @@ func main() {
 	if status == false {
 		fmt.Println("value not Found")
 	} else {
-		fmt.Println(valueFound, status)
+		fmt.Println(valueFound)
 	}
 }
