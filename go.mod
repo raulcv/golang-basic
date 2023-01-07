@@ -1,4 +1,4 @@
-module github.com/raulcv/go-basic
+module github.com/raulcv/golang-basic
 
 go 1.18
 
